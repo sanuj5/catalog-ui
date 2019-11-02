@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApplicationService } from '../application.service';
 
 @Component({
   selector: 'app-application',
@@ -18,9 +19,13 @@ export class ApplicationComponent implements OnInit {
     }
   ];
 
-  constructor() { }
+  constructor(private appService: ApplicationService) { }
 
   ngOnInit() {
+  }
+
+  getServices(){
+    this.appService.setApplication
   }
 
 }
